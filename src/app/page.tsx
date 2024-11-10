@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { title } from 'process';
 import { Metadata } from 'next/types';
 import Navbar from './components/Navbar';
+import CookieConsent from './components/CookieConsent';
 
 export const metadata: Metadata = {
   title: 'FreeFriday.Games: Cookie clicker',
@@ -26,6 +27,8 @@ export default function Home() {
           </Link>
         }
       </main>
+
+      <CookieConsent />
     </div>
   );
 }
